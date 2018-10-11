@@ -14,8 +14,8 @@ def get_template(path):
 def render_context(template_string, context):
     return template_string.format(**context)
 
-file_ = 'templates\email_message.txt'
-file_html = 'templates\html_message.html'
+file_ = 'templates\\email_message.txt'
+file_html = 'templates\\html_message.html'
 template = get_template(file_)
 template_html = get_template(file_html)
 context = {
