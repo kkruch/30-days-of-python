@@ -3,6 +3,17 @@ import datetime
 import shutil
 from tempfile import NamedTemporaryFile
 
+def read_data(user_id=None, email=None):
+    filename = 'data.csv'
+    with open(filename, 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        items = []
+        unknown_user_id = None
+        Unknown_email = None
+        for row in reader:
+            
+
+
 def get_lenght(file_path):
     with open("data.csv") as csvfile:
         reader = csv.reader(csvfile)
